@@ -1,0 +1,31 @@
+<% include partials/header.ejs %>
+
+
+<div class="home-page">
+    <h1>Welcome to my Authentication Demo!</h1>
+    <h2>Sing Up or Sing In</h2>
+</div>
+
+
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" action="/login" method="POST">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <button>Login</button>
+        </form>
+    </div>
+</div>
+
+<div class="login-page">
+    <div class="form">
+        <form class="register-form" action="/register" method="POST">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <button>Sign Up</button>
+        </form>
+    </div>
+</div>
+
+
+<% include partials/footer.ejs %>
